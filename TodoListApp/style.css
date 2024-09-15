@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(161, 60, 60), rgb(7, 7, 121));
+  padding: 10px;
+}
+
+.todo-app {
+    background: #fff;
+    max-width: 540px;
+    max-width: 450px;
+    margin: 100px auto 100px;
+    padding: 40px 30px 40px;
+    border-radius: 12px;
+}
+
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    color: rgb(16, 16, 82);
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.181);
+    border-radius: 20px;
+}
+
+.row input {
+    font-size: 16px;   
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: transparent;
+    color: #333333;
+    font-weight: 700;
+}
+
+.row button {
+    font-size: 16px;   
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: rgba(183, 29, 29, 0.711);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+ul li {
+    margin: 15px 0;
+    list-style: none;
+    padding: 5px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li:before {
+    content: "";
+    position: absolute;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top:5px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 16px;
+    background: #5555552f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}

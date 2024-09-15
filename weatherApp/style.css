@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+body {
+    background: rgb(255, 255, 255)!important;
+    height: 100vh;
+}
+
+.card {
+    max-width: 540px;
+    margin: 100px auto 10px;
+    padding: 10px 20px 10px;
+    background: linear-gradient(135deg, rgb(16, 182, 247), rgba(255, 0, 238, 0.626));
+    border-radius: 20px!important;
+    text-align: center;
+}
+
+#weather-part{
+    display: none;
+}
+
+.card .search-section {
+    background: #55555544;
+    padding: 4px;
+    margin: 20px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .search-section input {
+    outline: none;
+    border: none;
+    color: #555!important;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: transparent;
+    flex: 1;
+}
+
+.card .search-section button {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.card .search-section button img {
+    width: 30px;
+}
+
+.card .card-body img {
+    width: 200p;
+}
+
+.row .col-6 {
+    display: flex;
+    align-items: center!important;
+    text-align: left;
+}
+
+.row .col-6 img {
+    width: 60px;
+    margin-right: 10px;
+    margin-left: 60px;
+}
+
+h1 {
+    font-size: 40px!important;
+}
+
+h2 {
+    font-size: 35px!important;
+    margin-bottom: 80px!important;
+}
+
+#error {
+    margin-top: 10px;
+    font-size: large;
+    display: none;
+}
